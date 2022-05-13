@@ -14,7 +14,7 @@ people that live in that house. You will also be able to call `#house` on a
 ## Phase 1: `rails new`
 
 - Create a new rails project using PostgreSQL.
-  - Remember to use the `-G`, `--minimal`, `-T`, and `-d=postgresql` flags when
+  - Remember to use the `-G`, `-T`, `--minimal`, and `-d=postgresql` flags when
     creating your project!
   - Remember to change `debug` to `byebug` and add `pry-rails` and other helpful
     gems in your __Gemfile__ (then `bundle install`)!
@@ -28,7 +28,9 @@ people that live in that house. You will also be able to call `#house` on a
   - You will need to create and run a migration for each model. (Refer to the
     Migration reading if you need a reminder!)
   - You will need to create a file called `<model_name>.rb` in `app/models/` for
-    each model. (Replace `<model_name>` with the (singular) name of the model.)
+    each model.
+    > Replace `<model_name>` with the (singular, lowercase, snake_case) name of
+    > the model.
   - For each model, you should validate the presence of each attribute that the
     model can have. (Refer to the Basic Validations reading for an example.)
     Remember that Rails handles certain validations for you!
