@@ -16,6 +16,10 @@ people that live in that house. You will also be able to call `#house` on a
 - Create a new rails project using PostgreSQL.
   - Remember to use the `-G`, `-T`, `--minimal`, and `-d=postgresql` flags when
     creating your project!
+  - Since you used the `-G` flag, Rails will not create the __.gitattributes__
+    and **.gitignore** files. You can grab those two files from the starter repo
+    at the `Download Project` button below. Copy them into the root directory of
+    your project.
   - Remember to change `debug` to `byebug` and add `pry-rails` and other helpful
     gems in your __Gemfile__ (then `bundle install`)!
   - Remember to create the database!
