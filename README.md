@@ -16,12 +16,12 @@ people that live in that house. You will also be able to call `#house` on a
 - Create a new rails project using PostgreSQL.
   - Remember to use the `-G`, `-T`, `--minimal`, and `-d=postgresql` flags when
     creating your project!
+  - Remember to change `debug` to `byebug` and add `pry-rails` and `annotate` in
+    your __Gemfile__ (then `bundle install`)!
   - Since you used the `-G` flag, Rails will not create the __.gitattributes__
     and **.gitignore** files. You can grab those two files from the starter repo
     at the `Download Project` button below. Copy them into the root directory of
     your project.
-  - Remember to change `debug` to `byebug` and add `pry-rails` and other helpful
-    gems in your __Gemfile__ (then `bundle install`)!
   - Remember to create the database!
   - Remember that you need to have Postgres running in the background!
 
@@ -38,6 +38,8 @@ people that live in that house. You will also be able to call `#house` on a
   - For each model, you should validate the presence of each attribute that the
     model can have. (Refer to the Basic Validations reading for an example.)
     Remember that Rails handles certain validations for you!
+    > Hint: Run `bundle exec annotate --models` to install a copy of the
+    > model's schema at the top of each model file.
 - Create a `House` model and a `houses` table. Each `House` should have an
   `address`. Add appropriate validations.
 
